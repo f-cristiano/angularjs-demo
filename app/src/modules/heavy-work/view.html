@@ -1,0 +1,14 @@
+<blockquote class="blockquote">
+    <p class="mb-0">Work!</p>
+    <footer class="blockquote-footer">All work and no play makes Jack a dull boy</footer>
+</blockquote>
+
+<div class="container">
+    <button ng-if="work.ready"  type="button" class="btn btn-outline-info" ng-click="pushMe()">Ready to work</button>
+    <button ng-if="!work.ready" disabled type="button" class="btn btn-outline-info">working...</button>
+    <br>
+    <br>
+    <span ng-if="work.isCompleted" class="badge badge-pill badge-success">{{work.status}}</span>
+    <span ng-if="work.isBroken"    class="badge badge-pill badge-danger"> {{work.status}}</span>
+</div>
+

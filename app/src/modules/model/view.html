@@ -1,0 +1,18 @@
+
+<blockquote class="blockquote">
+    <p class="mb-0">Model</p>
+    <footer class="blockquote-footer">Call me Derek</footer>
+</blockquote>
+
+<form>
+    <div class="row">
+        <div class="col">
+            <label for="typingTest1">Type something</label>
+            <input ng-model="userType" type="text" class="form-control" id="typingTest1" placeholder="Typing...">
+        </div>
+        <div class="col">
+            <label for="typingEcho1">It's a echo...</label>
+            <input class="form-control" type="text" id="typingEcho1" placeholder="{{ userType }}" readonly>
+        </div>
+    </div>
+</form>

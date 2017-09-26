@@ -1,0 +1,29 @@
+<blockquote class="blockquote">
+    <p class="mb-0">Todo List</p>
+    <footer class="blockquote-footer">My first 10 todos</footer>
+</blockquote>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col col-7">
+            <!-- Item list  -->
+            <ul class="list-group">
+                <li
+                        ng-repeat="item in todo.list"
+                        class="list-group-item"
+                        ng-class="{'list-group-item-success': item.completed}">
+                    <button type="button" class="btn btn-outline-dark btn-sm" ng-click="selected.select(item)">View</button>
+                    <span style="text-transform: capitalize">{{ item.title }}</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col col-5">
+            <!-- Current Item selected  -->
+            <pre ng-show="selected.item">{{ selected.item | json }}</pre>
+        </div>
+
+    </div>
+</div>
+

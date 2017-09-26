@@ -1,0 +1,48 @@
+<!doctype html>
+<html ng-app="DemoApp">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+
+<ul class="nav justify-content-end">
+    <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#!/model">Model</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#!/todo">Todo</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#!/heavy-work">Work!</a>
+    </li>
+</ul>
+
+<div class="container" ng-view></div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.min.js"></script>
+
+<!-- Load Apps : BEGIN -->
+<script src="src/demo-app/app.js"></script>
+<script src="src/demo-app/config.js"></script>
+<!-- Load Apps : END -->
+
+<!-- Load modules : BEGIN -->
+<script src="src/modules/todo.module.js"></script>
+<script src="src/modules/todo/controller.js"></script>
+<script src="src/modules/todo/service.js"></script>
+
+<script src="src/modules/model.module.js"></script>
+<script src="src/modules/model/controller.js"></script>
+
+
+<script src="src/modules/heavy-work.module.js"></script>
+<script src="src/modules/heavy-work/service.js"></script>
+<script src="src/modules/heavy-work/controller.js"></script>
+
+<!-- Load modules : END -->
+</html>
