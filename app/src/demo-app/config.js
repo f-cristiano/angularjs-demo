@@ -7,7 +7,6 @@ angular.module('DemoApp.configs')
             templateUrl: 'src/modules/home/view.html'
         });
 
-
         $routeProvider.when('/todo', {
             templateUrl: 'src/modules/todo/view.html',
             controller: 'UbModuleTodoController'
